@@ -197,6 +197,7 @@ export default function Home() {
             {Object.keys(DUMMY_DATA[0]).map((key) => (
               <Card key={key} className="flex h-32 flex-col items-center justify-center">
                 <h3 className="text-sm font-bold uppercase text-primary">{key}</h3>
+                {/* @ts-ignore */}
                 <p className="text-lg uppercase">{getRandomObject(DUMMY_DATA)[key].toString()}</p>
               </Card>
             ))}
